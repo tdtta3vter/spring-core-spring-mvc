@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>Spring Core Online Tutorial - Show Customer</title>
+    <title>Spring - Thông tin KH</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 
     <link href="http://cdn.jsdelivr.net/webjars/bootstrap/3.3.4/css/bootstrap.min.css"
@@ -19,28 +19,28 @@
 
     <div class="row">
         <div class="col-sm-6">
-            <h2>Show Customer</h2>
+            <h2>Thông tin KH</h2>
         </div>
     </div>
     <div class="row">
         <div class="col-sm-8">
             <form class="form-horizontal">
                 <div class="form-group">
-                    <label class="col-sm-2 control-label">Customer Id:</label>
+                    <label class="col-sm-2 control-label">Id KH:</label>
                     <div class="col-sm-10">
-                        <p class="form-control-static" th:text="${customer.id}">Customer Id</p>
+                        <p class="form-control-static" th:text="${customer.id}">Id KH</p>
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="col-sm-2 control-label">First Name:</label>
+                    <label class="col-sm-2 control-label">Tên:</label>
                     <div class="col-sm-10">
-                        <p class="form-control-static" th:text="${customer.firstName}">First Name</p>
+                        <p class="form-control-static" th:text="${customer.firstName}">Tên</p>
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="col-sm-2 control-label">Last Name:</label>
+                    <label class="col-sm-2 control-label">Họ:</label>
                     <div class="col-sm-10">
-                        <p class="form-control-static" th:text="${customer.lastName}">Last Name</p>
+                        <p class="form-control-static" th:text="${customer.lastName}">Họ</p>
                     </div>
                 </div>
                 <div class="form-group">
@@ -50,33 +50,33 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="col-sm-2 sm-2 control-label">Phone:</label>
+                    <label class="col-sm-2 sm-2 control-label">Sđt:</label>
                     <div class="col-sm-10">
-                        <p class="form-control-static" th:text="${customer.phoneNumber}">Phone</p>
+                        <p class="form-control-static" th:text="${customer.phoneNumber}">Sđt</p>
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="col-sm-2 sm-2 control-label">Address Line 1:</label>
+                    <label class="col-sm-2 sm-2 control-label">Địa chỉ 1:</label>
                     <div class="col-sm-10">
-                        <p class="form-control-static" th:text="${customer.billingAddress.addressLine1}">Address Line 1</p>
+                        <p class="form-control-static" th:text="${customer.billingAddress.addressLine1}">Địa chỉ 1</p>
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="col-sm-2 sm-2 control-label">Address Line 2:</label>
+                    <label class="col-sm-2 sm-2 control-label">Địa chỉ 2:</label>
                     <div class="col-sm-10">
-                        <p class="form-control-static" th:text="${customer.billingAddress.addressLine2}">Address Line 2</p>
+                        <p class="form-control-static" th:text="${customer.billingAddress.addressLine2}">Địa chỉ 2</p>
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="col-sm-2 sm-2 control-label">City:</label>
+                    <label class="col-sm-2 sm-2 control-label">Thành phố:</label>
                     <div class="col-sm-10">
-                        <p class="form-control-static" th:text="${customer.billingAddress.city}">City</p>
+                        <p class="form-control-static" th:text="${customer.billingAddress.city}">Thành phố</p>
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="col-sm-2 sm-2 control-label">State:</label>
+                    <label class="col-sm-2 sm-2 control-label">Tỉnh:</label>
                     <div class="col-sm-10">
-                        <p class="form-control-static" th:text="${customer.billingAddress.state}">State</p>
+                        <p class="form-control-static" th:text="${customer.billingAddress.state}">Tỉnh</p>
                     </div>
                 </div>
                 <div class="form-group">

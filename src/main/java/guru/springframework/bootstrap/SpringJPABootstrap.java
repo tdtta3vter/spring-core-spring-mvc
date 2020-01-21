@@ -104,51 +104,51 @@ public class SpringJPABootstrap implements ApplicationListener<ContextRefreshedE
 
     public void loadUsersAndCustomers() {
         User user1 = new User();
-        user1.setUsername("mweston");
+        user1.setUsername("thuan.tran");
         user1.setPassword("password");
 
         Customer customer1 = new Customer();
-        customer1.setFirstName("Micheal");
-        customer1.setLastName("Weston");
+        customer1.setFirstName("Thuận");
+        customer1.setLastName("Trần");
         customer1.setBillingAddress(new Address());
-        customer1.getBillingAddress().setAddressLine1("1 Main St");
-        customer1.getBillingAddress().setCity("Miami");
-        customer1.getBillingAddress().setState("Florida");
-        customer1.getBillingAddress().setZipCode("33101");
-        customer1.setEmail("micheal@burnnotice.com");
-        customer1.setPhoneNumber("305.333.0101");
+        customer1.getBillingAddress().setAddressLine1("111 Thắng Nhất");
+        customer1.getBillingAddress().setCity("Vũng Tàu");
+        customer1.getBillingAddress().setState("Bà Rịa Vũng Tàu");
+        customer1.getBillingAddress().setZipCode("11111");
+        customer1.setEmail("thuan.tran@gmail.com.com");
+        customer1.setPhoneNumber("012345678");
         user1.setCustomer(customer1);
         userService.saveOrUpdate(user1);
 
         User user2 = new User();
-        user2.setUsername("fglenanne");
+        user2.setUsername("TT");
         user2.setPassword("password");
 
         Customer customer2 = new Customer();
-        customer2.setFirstName("Fiona");
-        customer2.setLastName("Glenanne");
+        customer2.setFirstName("Mỹ Dung");
+        customer2.setLastName("Trần");
         customer2.setBillingAddress(new Address());
-        customer2.getBillingAddress().setAddressLine1("1 Key Biscane Ave");
-        customer2.getBillingAddress().setCity("Miami");
-        customer2.getBillingAddress().setState("Florida");
+        customer2.getBillingAddress().setAddressLine1("111 Thắng Nhì");
+        customer2.getBillingAddress().setCity("VT");
+        customer2.getBillingAddress().setState("BRVT");
         customer2.getBillingAddress().setZipCode("33101");
-        customer2.setEmail("fiona@burnnotice.com");
+        customer2.setEmail("td@gmail.com");
         customer2.setPhoneNumber("305.323.0233");
         user2.setCustomer(customer2);
         userService.saveOrUpdate(user2);
 
         User user3 = new User();
-        user3.setUsername("saxe");
+        user3.setUsername("tmd");
         user3.setPassword("password");
         Customer customer3 = new Customer();
         customer3.setFirstName("Sam");
-        customer3.setLastName("Axe");
+        customer3.setLastName("Nguyễn");
         customer3.setBillingAddress(new Address());
-        customer3.getBillingAddress().setAddressLine1("1 Little Cuba Road");
-        customer3.getBillingAddress().setCity("Miami");
-        customer3.getBillingAddress().setState("Florida");
+        customer3.getBillingAddress().setAddressLine1("1 Cuba");
+        customer3.getBillingAddress().setCity("HCM");
+        customer3.getBillingAddress().setState("HCM");
         customer3.getBillingAddress().setZipCode("33101");
-        customer3.setEmail("sam@burnnotice.com");
+        customer3.setEmail("sam@gmail.com");
         customer3.setPhoneNumber("305.426.9832");
 
         user3.setCustomer(customer3);

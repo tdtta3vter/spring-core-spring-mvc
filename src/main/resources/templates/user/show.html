@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>Spring Core Online Tutorial - Show User</title>
+    <title>Spring - Thông tin Người dùng</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 
     <link href="http://cdn.jsdelivr.net/webjars/bootstrap/3.3.4/css/bootstrap.min.css"
@@ -13,34 +13,35 @@
 
     <link href="../../static/css/spring-core.css"
           th:href="@{css/spring-core.css}" rel="stylesheet" media="screen"/>
+         
 </head>
 <body>
 <div class="container">
 
     <div class="row">
         <div class="col-sm-6">
-            <h2>Show User</h2>
+            <h2>Thông tin người dùng</h2>
         </div>
     </div>
     <div class="row">
         <div class="col-sm-8">
             <form class="form-horizontal">
                 <div class="form-group">
-                    <label class="col-sm-2 control-label">User Id:</label>
+                    <label class="col-sm-2 control-label">Id:</label>
                     <div class="col-sm-10">
-                        <p class="form-control-static" th:text="${user.id}">User Id</p>
+                        <p class="form-control-static" th:text="${user.id}">Id</p>
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="col-sm-2 control-label">First Name:</label>
+                    <label class="col-sm-2 control-label">Tên:</label>
                     <div class="col-sm-10">
-                        <p class="form-control-static" th:text="${user.customer.firstName}">Description</p>
+                        <p class="form-control-static" th:text="${user.customer.firstName}">Mô tả</p>
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="col-sm-2 control-label">Last Name:</label>
+                    <label class="col-sm-2 control-label">Họ:</label>
                     <div class="col-sm-10">
-                        <p class="form-control-static" th:text="${user.customer.lastName}">Price</p>
+                        <p class="form-control-static" th:text="${user.customer.lastName}">Giá tiền</p>
                     </div>
                 </div>
                 <div class="form-group">
@@ -50,32 +51,32 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="col-sm-2 sm-2 control-label">Phone Number:</label>
+                    <label class="col-sm-2 sm-2 control-label">Phone:</label>
                     <div class="col-sm-10">
                         <p class="form-control-static" th:text="${user.customer.phoneNumber}">Image</p>
                     </div>
                 </div>
-                <h2>Billing Address</h2>
+                <h2>Địa chỉ thanh toán</h2>
                 <div class="form-group">
-                    <label class="col-sm-2 sm-2 control-label">Address Line 1:</label>
+                    <label class="col-sm-2 sm-2 control-label">Địa chỉ 1:</label>
                     <div class="col-sm-10">
                         <p class="form-control-static" th:text="${user.customer.billingAddress.addressLine1}">Image</p>
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="col-sm-2 sm-2 control-label">Address Line 2:</label>
+                    <label class="col-sm-2 sm-2 control-label">Địa chỉ 2:</label>
                     <div class="col-sm-10">
                         <p class="form-control-static" th:text="${user.customer.billingAddress.addressLine2}">Image</p>
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="col-sm-2 sm-2 control-label">City:</label>
+                    <label class="col-sm-2 sm-2 control-label">Thành phố:</label>
                     <div class="col-sm-10">
                         <p class="form-control-static" th:text="${user.customer.billingAddress.city}">Image</p>
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="col-sm-2 sm-2 control-label">State:</label>
+                    <label class="col-sm-2 sm-2 control-label">Tỉnh:</label>
                     <div class="col-sm-10">
                         <p class="form-control-static" th:text="${user.customer.billingAddress.state}">Image</p>
                     </div>

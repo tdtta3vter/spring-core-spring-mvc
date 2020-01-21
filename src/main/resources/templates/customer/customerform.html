@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>Spring Core Online Tutorial - Customer Form</title>
+    <title>Spring - Form KH</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 
     <link href="http://cdn.jsdelivr.net/webjars/bootstrap/3.3.4/css/bootstrap.min.css"
@@ -17,18 +17,18 @@
 <body>
 <div class="container">
 
-    <h2>Customer Details</h2>
+    <h2>Thông tin KH</h2>
     <div>
         <form class="form-horizontal" th:object="${customer}" th:action="@{/customer}" method="post">
             <input type="hidden" th:field="*{id}"/>
             <div class="form-group">
-                <label class="col-sm-2 control-label">First Name:</label>
+                <label class="col-sm-2 control-label">Tên:</label>
                 <div class="col-sm-10">
                     <input type="text" class="form-control" th:field="*{firstName}"/>
                 </div>
             </div>
             <div class="form-group">
-                <label class="col-sm-2 control-label">Last Name:</label>
+                <label class="col-sm-2 control-label">Họ:</label>
                 <div class="col-sm-10">
                     <input type="text" class="form-control" th:field="*{lastName}"/>
                 </div>
@@ -40,31 +40,31 @@
                 </div>
             </div>
             <div class="form-group">
-                <label class="col-sm-2 control-label">Phone:</label>
+                <label class="col-sm-2 control-label">Sđt:</label>
                 <div class="col-sm-10">
                     <input type="text" class="form-control" th:field="*{phoneNumber}"/>
                 </div>
             </div>
             <div class="form-group">
-                <label class="col-sm-2 control-label">Address Line 1:</label>
+                <label class="col-sm-2 control-label">Địa chỉ 1:</label>
                 <div class="col-sm-10">
                     <input type="text" class="form-control" th:field="*{billingAddress.addressLine1}"/>
                 </div>
             </div>
             <div class="form-group">
-                <label class="col-sm-2 control-label">Address Line 2:</label>
+                <label class="col-sm-2 control-label">Địa chỉ 2</label>
                 <div class="col-sm-10">
                     <input type="text" class="form-control" th:field="*{billingAddress.addressLine2}"/>
                 </div>
             </div>
             <div class="form-group">
-                <label class="col-sm-2 control-label">City:</label>
+                <label class="col-sm-2 control-label">Thành phố:</label>
                 <div class="col-sm-10">
                     <input type="text" class="form-control" th:field="*{billingAddress.city}"/>
                 </div>
             </div>
             <div class="form-group">
-                <label class="col-sm-2 control-label">State:</label>
+                <label class="col-sm-2 control-label">Tỉnh:</label>
                 <div class="col-sm-10">
                     <input type="text" class="form-control" th:field="*{billingAddress.state}"/>
                 </div>
@@ -76,7 +76,7 @@
                 </div>
             </div>
             <div class="row">
-                <button type="submit" class="btn btn-default">Submit</button>
+                <button type="submit" class="btn btn-default">Đăng ký</button>
             </div>
         </form>
     </div>

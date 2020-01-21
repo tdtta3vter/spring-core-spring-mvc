@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>Spring Core Online Tutorial - List Products</title>
+    <title>Spring - List Sản phẩm</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 
     <link href="http://cdn.jsdelivr.net/webjars/bootstrap/3.3.4/css/bootstrap.min.css"
@@ -17,31 +17,31 @@
 <body>
 <div class="container">
     <div th:if="${not #lists.isEmpty(products)}">
-        <h2>Product List</h2>
+        <h2>List sản phẩm</h2>
         <table class="table table-striped">
             <tr>
                 <th>Id</th>
-                <th>Description</th>
-                <th>Price</th>
-                <th>Image URL</th>
+                <th>Mô tả</th>
+                <th>Giá tiền</th>
+                <th>URL hình ảnh</th>
                 <th>List</th>
-                <th>Edit</th>
-                <th>Delete</th>
+                <th>Chỉnh sửa</th>
+                <th>Xóa</th>
             </tr>
             <tr th:each="product : ${products}">
                 <td th:text="${product.id}"></td>
                 <td th:text="${product.description}"></td>
                 <td th:text="${product.price}"></td>
                 <td th:text="${product.imageUrl}"></td>
-                <td><a th:href="${'/product/show/' + product.id}">View</a> </td>
-                <td><a th:href="${'/product/edit/' + product.id}">Edit</a> </td>
-                <td><a th:href="${'/product/delete/' + product.id}">Delete</a> </td>
+                <td><a th:href="${'/product/show/' + product.id}">Nhấn để xem</a> </td>
+                <td><a th:href="${'/product/edit/' + product.id}">Nhấn để sửa</a> </td>
+                <td><a th:href="${'/product/delete/' + product.id}">Nhấn để xóa</a> </td>
             </tr>
         </table>
     </div>
     <div class="row">
         <div class="col-sm-3">
-            <a href="/product/new">New Product</a>
+            <a href="/product/new">Tạo sản phẩm mới</a>
         </div>
     </div>
 </div>
